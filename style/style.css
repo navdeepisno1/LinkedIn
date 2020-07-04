@@ -15,6 +15,11 @@
 	width: 100%;
 }
 
+.navbar-m
+{
+	display: none;
+}
+
 .search-bar
 {
 	margin-top: 8px;
@@ -116,7 +121,7 @@
 {
 	position: absolute;
 	left: 14%;
-	top: 150px;
+	top: 108px;
 	background: #fff;
 	width: 216px;
 	height: 400px;
@@ -129,7 +134,7 @@
 	height: 100%;	
 	
 	position: absolute;
-	top: 150px;
+	top: 108px;
 	left: 14%;
 	transform: translateX(240px);
 }
@@ -150,7 +155,7 @@
 {
 	position: absolute;
 	left: 14%;
-	top: 150px;
+	top: 108px;
 	width: 312px;
 	height: 400px;
 	transform:translateX(818px);
@@ -230,3 +235,63 @@ border: thin solid #b9b9b9;
 width:25px;
 height: 25px;
 }
+
+.navbar-bottom-m
+{
+	display: none;
+}
+
+@media only screen and (max-width: 772px) {
+	.navbar
+	{
+		display:none;
+	}
+	.about
+	{
+		display: none;
+	}
+	.news
+	{
+		display: none;
+	}
+
+	.feeds
+	{
+		background: transparent;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 75px;
+		left: 50%;
+		transform:  translateX(-50%);
+	}
+
+	.navbar-m
+{
+	box-shadow: 0 0 10px 2px #b9b9b9;
+	display: block;
+	z-index: 99999;
+	background-color: #283e4a;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 52px;
+	width: 100%;
+}
+.navbar-bottom-m
+{
+	box-shadow: 0 0 10px 2px #b9b9b9;
+	display: block;
+	z-index: 99999;
+	background-color: #283e4a;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 52px;
+	width: 100%;
+}
+.messaging
+{
+	display: none;
+}
+  }
